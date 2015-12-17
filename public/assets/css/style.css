@@ -1,0 +1,136 @@
+body {
+  padding-top: 10px;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hide-bullets {
+list-style:none;
+margin-left: -40px;
+margin-top:20px;
+}
+
+/* STYLE FOR KEY PAGES */
+#main_area
+{
+	width: 100%;
+	margin: auto;
+}
+#codingTextarea
+{
+	font-size: 20px;
+}
+
+/* STYLE FOR EXO PAGES */
+  /* Move down content because we have a fixed navbar that is 50px tall */
+a{
+  text-decoration: none;
+  color: #ececec;
+}
+.jumbotron .lead{
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.preExo{
+  border-bottom: 5px solid #ececec;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 35px #ececec;
+}
+.preExo:hover{
+  box-shadow: 0px 0px 5px black;
+}
+.preExo .nbrStat{
+  margin-bottom: -40px;
+}
+.langExo{
+  text-align: center;
+}
+.langExo a{
+  text-decoration: none;
+  color: black;
+}
+.exo:hover{
+  background: white;
+  width: 100%;
+}
+.userExo img{
+    border-radius: 15px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: -35px;
+}
+.userExo a{
+  margin-left: 50px;
+}
+#userPaper{
+  border-left: 5px solid #ececec;
+  border-right: 5px solid #ececec;
+  border-radius: 15px;
+  padding: 15px;
+}
+#userPaper:hover{
+  background: #ececec;
+}
+.orInter{
+  margin: 20px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.userComment{
+  border-right: 2px solid #ececec;
+  border-left: 2px solid #ececec;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+.userComment:hover{
+  background: #ececec;
+}
+#participants{
+    position: absolute;
+    right: 40px;
+    margin-left: 20px;
+}
+#participants img, #userParticip img{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+#userCreateExo{
+  background: #ececec;
+  border-radius: 15px;
+  padding-bottom: 10px;
+}
+.objectifExo{
+  margin-top: 20px;
+}
+.objectifExo textarea{
+  width: 100%;
+  border-bottom: 5px solid #ececec;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px #ececec;
+  padding: 10px;
+}
+#choiceLanguage input{
+  display: inline-block;
+  margin-left: 20px;
+}
+.formSign{
+  margin-top: 20px;
+  text-align: center;
+}
+.formSign input{
+  width: 200px;
+  display: block;
+  margin-top: 80px;
+}
+.formSign p input{
+  width: 100%;
+}
