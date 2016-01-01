@@ -75,7 +75,7 @@ $(function(){
 		// CHANGE LANGUAGE
 		$("#language").click(function(){
 			var valOptionLanguage = $("#language").val();
-		 	$(location).attr('href', 'keyboarding/:' + valOptionLanguage);
+		 	$(location).attr('href', '/keyboarding/' + valOptionLanguage);
 		});
 
 	
