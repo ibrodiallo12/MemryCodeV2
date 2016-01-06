@@ -7,7 +7,6 @@
 var express = require('express');
 var cookieParser = require('cookie-parser');
 var route = require('./routes/mainRoutes.js');
-var session = require('express-session');
 
 //environement
 var app = express();
