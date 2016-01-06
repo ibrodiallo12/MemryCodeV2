@@ -62,14 +62,5 @@ function choiceLang(choiceLang) {
     
 };
 
-function language(language){
-	return choiceLang(language).language;
-}
 
-function modeUsed(modeUsed){
-	return choiceLang(modeUsed).modeUsed;
-}
-
-
-module.exports.language = language;
-module.exports.modeUsed = modeUsed;
+module.exports.choiceLang = choiceLang;

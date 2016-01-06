@@ -5,17 +5,22 @@
 
 //call modules
 var express = require('express');
+var cookieParser = require('cookie-parser');
 var route = require('./routes/mainRoutes.js');
+var session = require('express-session');
 
-
-//start server
+//environement
 var app = express();
+
+app.use(cookieParser());
 
 //Get port
 var port = process.env.PORT || 8080;
 
 //Get static files
 app.use(express.static('public'));
+app.use("/keyboarding/:choiceLang", express.static(__dirname + '/public'));
+
 
 
 // ====================== Routes

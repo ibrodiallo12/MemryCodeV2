@@ -21,10 +21,15 @@ module.exports.about = function(req, res) {
 // Routers for Keyboarding Pages
 module.exports.keyboarding = function(req, res) {
 	var choiceLang = req.params.choiceLang;
-    res.render('keyboarding.ejs', { lang : choice.language(choiceLang), 
-    								mode : choice.modeUsed(choiceLang) });
+    // choiceLang and cookie lang both not undefined
+    if(typeof(choiceLang) == 'undefined' && typeof(req.cookies.lang) != 'undefined'){
+        choiceLang = req.cookies.lang;
+    }
+    // Set the cookie 'lang'
+    res.cookie('lang', choiceLang, {expires : new Date() + (365 * 60 * 60), maxAge : new Date(365 * 60 * 60)});
+    res.render('keyboarding.ejs', { lang : choice.choiceLang(choiceLang).language, 
+    								mode : choice.choiceLang(choiceLang).modeUsed });
 };
-
 // End Routes Keyboarding Pages
 
 
